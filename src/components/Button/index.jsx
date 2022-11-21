@@ -2,9 +2,9 @@ import P from 'prop-types';
 import './style.css';
 
 export const Button = ({ text, onClick, disabled = false }) => (
-  <button className="button" onClick={onClick} disabled={disabled}>
+  <Button className="button" onClick={onClick} disabled={disabled}>
     {text}
-  </button>
+  </Button>
 );
 
 Button.defaultProps = {

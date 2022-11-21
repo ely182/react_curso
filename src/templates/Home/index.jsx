@@ -35,7 +35,7 @@ export const Home = () => {
     setPage(nextPage);
   };
 
-  const handleChange = (e) => {
+const handleChange = (e) => {
     const { value } = e.target;
     setSearchValue(value);
   };
