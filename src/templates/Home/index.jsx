@@ -1,18 +1,17 @@
-
 import { useCallback, useEffect, useState } from 'react';
 
-import './style.css';
+import './styles.css';
 
 import { Posts } from '../../components/Posts';
 import { loadPosts } from '../../utils/load-posts';
 import { Button } from '../../components/Button';
-import { TextInput } from '../../components/textInput';
+import { TextInput } from '../../components/TextInput';
 
 export const Home = () => {
   const [posts, setPosts] = useState([]);
   const [allPosts, setAllPosts] = useState([]);
   const [page, setPage] = useState(0);
-  const [postsPerPage] = useState(10);
+  const [postsPerPage] = useState(2);
   const [searchValue, setSearchValue] = useState('');
 
   const handleLoadPosts = useCallback(async (page, postsPerPage) => {
@@ -36,7 +35,7 @@ export const Home = () => {
     setPage(nextPage);
   };
 
-const handleChange = (e) => {
+  const handleChange = (e) => {
     const { value } = e.target;
     setSearchValue(value);
   };
@@ -51,7 +50,6 @@ const handleChange = (e) => {
   return (
     <section className="container">
       <div className="search-container">
-
         {!!searchValue && <h1>Search value: {searchValue}</h1>}
 
         <TextInput searchValue={searchValue} handleChange={handleChange} />

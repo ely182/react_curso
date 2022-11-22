@@ -9,7 +9,7 @@ exports[`<Posts /> should match snapshot 1`] = `
   >
     <img
       alt="title 1"
-      src="imag/imag1.png"
+      src="img/img1.png"
     />
     <div
       class="post-content"
@@ -29,7 +29,7 @@ exports[`<Posts /> should match snapshot 1`] = `
   >
     <img
       alt="title 2"
-      src="imag/imag2.png"
+      src="img/img2.png"
     />
     <div
       class="post-content"
@@ -49,7 +49,7 @@ exports[`<Posts /> should match snapshot 1`] = `
   >
     <img
       alt="title 3"
-      src="imag/imag3.png"
+      src="img/img3.png"
     />
     <div
       class="post-content"
